@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_Path"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Path应用"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimary"
+        android:text="仪表盘"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Path"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Path" />
+
+    <Button
+        android:id="@+id/btn_piechart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="饼图"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dashboard"
+        app:layout_constraintStart_toStartOf="@+id/btn_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dashboard" />
+
+    <Button
+        android:id="@+id/btn_fermode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="XFermode"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_piechart"
+        app:layout_constraintStart_toStartOf="@+id/btn_piechart"
+        app:layout_constraintTop_toBottomOf="@+id/btn_piechart" />
+
+    <Button
+        android:id="@+id/btn_testview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="文字的测量"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_mulTextView"
+        app:layout_constraintStart_toStartOf="@+id/btn_mulTextView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mulTextView" />
+
+    <Button
+        android:id="@+id/btn_mulTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="多行绘制"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_fermode"
+        app:layout_constraintStart_toStartOf="@+id/btn_fermode"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fermode" />
+
+    <Button
+        android:id="@+id/btn_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Canvas的几何变换"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_testview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_testview" />
+
+    <Button
+        android:id="@+id/btn_anim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="54dp"
+        android:background="@color/colorPrimary"
+        android:text="动画"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_canvas"
+        app:layout_constraintStart_toStartOf="@+id/btn_canvas"
+        app:layout_constraintTop_toBottomOf="@+id/btn_canvas" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
